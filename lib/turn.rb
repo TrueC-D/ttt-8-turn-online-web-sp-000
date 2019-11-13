@@ -38,5 +38,6 @@ end
 
 def turn (letter ="X")
   puts "Please enter 1-9:" 
-  gets.chomp
+  input = gets.chomp
+  input_to_index(input)
 end
