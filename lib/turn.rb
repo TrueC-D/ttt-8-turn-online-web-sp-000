@@ -27,3 +27,11 @@ def valid_move?(board, index)
     TRUE
   end
 end
+
+def move(board, index, letter="X")
+  if valid_move?(board, index)
+    board[index] = letter
+  else
+    puts "Invalid move"
+  end
+end
