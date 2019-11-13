@@ -32,6 +32,6 @@ def move(board, index, letter="X")
   if valid_move?(board, index)
     board[index] = letter
   else
-    puts "Invalid move"
+    puts "Invalid Move"
   end
 end
