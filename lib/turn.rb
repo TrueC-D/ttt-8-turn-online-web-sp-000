@@ -17,13 +17,13 @@ def input_to_index(input)
 end
 
 def valid_move?(board, index)
-  if board[index] == NIL
+  if index == NIL
     FALSE
-  elsif board[index].to_i < 0
-    false
+  elsif index > 9 || index < 0
+    FALSE
   elsif board[index].strip.length != 0
-    false
+    FALSE
   else
-    true
+    TRUE
   end
 end
