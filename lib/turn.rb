@@ -40,4 +40,6 @@ def turn (letter ="X")
   puts "Please enter 1-9:" 
   input = gets.chomp
   index = input_to_index(input)
+  
+  valid_move?(board, index)
 end
