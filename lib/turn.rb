@@ -37,4 +37,6 @@ def move(board, index, letter="X")
 end
 
 def turn (letter ="X")
-  puts 
+  puts "Please enter 1-9:" 
+  gets.chomp
+end
