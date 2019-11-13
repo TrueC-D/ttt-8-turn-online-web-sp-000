@@ -35,3 +35,6 @@ def move(board, index, letter="X")
     puts "Invalid Move"
   end
 end
+
+def turn (letter ="X")
+  puts 
