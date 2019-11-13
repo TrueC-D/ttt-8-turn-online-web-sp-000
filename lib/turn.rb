@@ -31,6 +31,7 @@ end
 def move(board, index, letter="X")
   if valid_move?(board, index)
     board[index] = letter
+    display_board(board)
   else
     puts "Invalid Move"
     turn(board, letter)
