@@ -33,6 +33,7 @@ def move(board, index, letter="X")
     board[index] = letter
   else
     puts "Invalid Move"
+    turn(board, letter)
   end
 end
 
@@ -40,6 +41,5 @@ def turn (board, letter ="X")
   puts "Please enter 1-9:" 
   input = gets.chomp
   index = input_to_index(input)
-  
-  valid_move?(board, index)
+  move(board, index, letter)
 end
